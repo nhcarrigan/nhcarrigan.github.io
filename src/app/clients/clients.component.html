@@ -1,0 +1,33 @@
+<h1>Our Clients</h1>
+<p>
+  These are the start-ups and communities that we have the great pleasure of
+  working with.
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>Since</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of clients">
+      <td>
+        <img
+          class="avatar"
+          src="/assets/img/clients/{{ member.avatar }}"
+          alt="{{ member.name }}"
+          width="100"
+        />
+      </td>
+      <td>
+        <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
+          member.name
+        }}</a>
+      </td>
+
+      <td>{{ member.since }}</td>
+    </tr>
+  </tbody>
+</table>

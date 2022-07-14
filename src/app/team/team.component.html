@@ -1,0 +1,33 @@
+<h1>Our Team</h1>
+<p>
+  At this time, we are currently a sole proprietorship. Our goal is to expand
+  into an LLC and bring on additional team members.
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>Position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of team">
+      <td>
+        <img
+          class="avatar"
+          src="/assets/img/team/{{ member.avatar }}"
+          alt="{{ member.name }}"
+          width="100"
+        />
+      </td>
+      <td>
+        <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
+          member.name
+        }}</a>
+      </td>
+
+      <td>{{ member.role }}</td>
+    </tr>
+  </tbody>
+</table>

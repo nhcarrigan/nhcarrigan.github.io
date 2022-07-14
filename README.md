@@ -1,35 +1,27 @@
-# Project Name
+# Homepage
 
-Project Description
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
-## Live Version
+## Development server
 
-This page is not yet deployed.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-<!--This page is currently deployed. [View the live website.]()-->
+## Code scaffolding
 
-## Feedback and Bugs
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-If you have feedback or a bug report, please feel free to open a GitHub issue!
+## Build
 
-## Contributing
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-If you would like to contribute to the project, you may create a Pull Request containing your proposed changes and we will review it as soon as we are able! Please review our [contributing guidelines](CONTRIBUTING.md) first.
+## Running unit tests
 
-## Code of Conduct
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Before interacting with our community, please read our [Code of Conduct](CODE_OF_CONDUCT.md).
+## Running end-to-end tests
 
-## Licensing
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Copyright (C) 2022 Naomi Carrigan
+## Further help
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
-
-The full license terms may be viewed in the [LICENSE.md file](./LICENSE.md)
-
-## Contact
-
-We may be contacted through our [Chat Server](http://chat.nhcarrigan.com) or via email at `contact@nhcarrigan.com`.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

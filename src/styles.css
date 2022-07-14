@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgba(108, 0, 162, 1) 0%,
+    rgba(46, 6, 62, 1) 50%,
+    rgba(108, 0, 162, 1) 100%
+  );
+  color: #dfb5f4;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #dfb5f4;
+}
+
+h1 {
+  font-family: "Vibur", sans-serif;
+  font-size: 4rem;
+  text-shadow:
+  /* White glow */ 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    /* Green glow */ 0 0 42px #f6e3ff, 0 0 82px #f6e3ff, 0 0 92px #f6e3ff,
+    0 0 102px #f6e3ff, 0 0 151px #f6e3ff;
+}
+
+p,
+li {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li::before {
+  content: "💜";
+}
