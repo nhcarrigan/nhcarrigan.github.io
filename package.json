@@ -10,6 +10,10 @@
     "test": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "deploy": "ng deploy"
   },
+  "engines": {
+    "node": "^18.0.0",
+    "npm": "^9.0.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "14.2.10",
