@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --dark-red: #800000;
-  --dark-blue: #0b0080;
-  --light-red: #f0beaf;
-  --light-blue: #48d1cc;
+  --dark-blue: #00302c;
+  --dark-link: #8f007c;
+  --light-blue: #73fff1;
+  --light-link: #ff94f1;
   --cursor-normal: url("https://cdn.nhcarrigan.com/cursors/cursor.cur");
   --cursor-pointer: url("https://cdn.nhcarrigan.com/cursors/pointer.cur");
 
@@ -32,18 +32,18 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: var(--dark-red);
+  color: var(--dark-blue);
   font-family: "Odudo", Courier, monospace;
   text-align: center;
 }
 
 a {
   cursor: var(--cursor-pointer), pointer;
-  color: var(--dark-blue);
+  color: var(--dark-link);
 }
 
 .light-link {
-  color: var(--light-blue);
+  color: var(--light-link);
 }
 
 ul {
@@ -96,7 +96,7 @@ li {
 
 /* NES.css Overrides */
 .nes-container.is-rounded {
-  background-color: rgb(240, 190, 175, 0.75);
+  background-color: rgb(115, 255, 241, 0.75);
 }
 
 .nes-container.is-rounded.with-title.is-centered {
@@ -105,19 +105,19 @@ li {
 
 .nes-container.is-rounded.with-title.is-centered.is-dark {
   margin-bottom: 20px;
-  background-color: var(--dark-red);
-  color: var(--light-red);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .nes-container.is-rounded.is-centered.is-dark {
   margin-bottom: 20px;
-  background-color: var(--dark-red);
-  color: var(--light-red);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .nes-container.is-rounded.with-title.is-centered > .title {
-  background-color: var(--dark-red);
-  color: var(--light-red);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
   font-size: 1.5rem;
 }
 
