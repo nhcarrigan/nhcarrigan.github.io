@@ -1,24 +1,24 @@
 <div class="content">
   <div class="nes-container with-title is-centered is-rounded">
-    <h1 class="title">Our Team</h1>
+    <h1 class="title">Our Clients</h1>
     <p>
-      At this time, we are currently a sole proprietorship. Our goal is to
-      expand into an LLC and bring on additional team members.
+      These are the start-ups and communities that have formerly worked with us.
     </p>
     <table>
       <thead>
         <tr>
           <th>Avatar</th>
           <th>Name</th>
-          <th>Position</th>
+          <th>Since</th>
+          <th>Until</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let member of team">
+        <tr *ngFor="let member of clients">
           <td>
             <img
               class="avatar"
-              src="{{ member.avatar }}"
+              src="/assets/img/clients/{{ member.avatar }}"
               alt="{{ member.name }}"
               width="100"
             />
@@ -32,7 +32,8 @@
             >
           </td>
 
-          <td>{{ member.role }}</td>
+          <td>{{ member.since }}</td>
+          <td>{{ member.until }}</td>
         </tr>
       </tbody>
     </table>

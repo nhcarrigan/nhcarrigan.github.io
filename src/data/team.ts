@@ -5,6 +5,6 @@ export const team: TeamMember[] = [
     name: 'Naomi Carrigan',
     link: 'https://naomi.lgbt',
     role: 'Owner, Sole Proprietor',
-    avatar: 'naomi.png',
+    avatar: 'https://cdn.nhcarrigan.com/profile.png',
   },
 ];

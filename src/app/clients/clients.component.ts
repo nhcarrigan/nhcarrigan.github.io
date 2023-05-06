@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { clients } from 'src/assets/data/clients';
-import { Client } from 'src/assets/interfaces/ClientMember';
+import { currentClients } from 'src/data/clients';
+import { Client } from 'src/interfaces/ClientMember';
 
 @Component({
   selector: 'app-clients',
@@ -13,6 +13,6 @@ export class ClientsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.clients = clients;
+    this.clients = currentClients;
   }
 }

@@ -4,3 +4,7 @@ export interface Client {
   avatar: string;
   since: string;
 }
+
+export interface PastClient extends Client {
+  until: string;
+}

@@ -7,6 +7,7 @@ import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { HomeComponent } from './home/home.component';
 import { MissionComponent } from './mission/mission.component';
 import { TeamComponent } from './team/team.component';
+import { PastComponent } from './past/past.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'clients', component: ClientsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'donate', component: DonateComponent },
+  { path: 'past', component: PastComponent },
   // wildcard route for 404 - all routes go above this (:
   { path: '**', component: FourOhFourComponent },
 ];
