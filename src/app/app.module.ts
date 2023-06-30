@@ -11,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { DonateComponent } from './donate/donate.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { PastComponent } from './past/past.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,12 @@ import { PastComponent } from './past/past.component';
     ContactComponent,
     DonateComponent,
     FourOhFourComponent,
-    PastComponent
+    PastComponent,
+    ProjectsComponent,
+    ShowcaseComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [ProjectsComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

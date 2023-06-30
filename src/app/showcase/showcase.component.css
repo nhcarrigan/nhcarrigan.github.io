@@ -1,0 +1,9 @@
+.avatar {
+  width: 100px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+}

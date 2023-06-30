@@ -8,12 +8,16 @@ import { HomeComponent } from './home/home.component';
 import { MissionComponent } from './mission/mission.component';
 import { TeamComponent } from './team/team.component';
 import { PastComponent } from './past/past.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'mission', component: MissionComponent },
   { path: 'team', component: TeamComponent },
   { path: 'clients', component: ClientsComponent },
+  { path: 'showcase', component: ShowcaseComponent },
+  { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'donate', component: DonateComponent },
   { path: 'past', component: PastComponent },

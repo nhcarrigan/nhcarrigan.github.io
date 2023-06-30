@@ -1,0 +1,30 @@
+<div class="content">
+  <div class="nes-container with-title is-centered is-rounded">
+    <h1 class="title">Top Projects</h1>
+    <p>
+      These are the projects that have received the most recognition from our
+      users (tracked by GitHub stars).
+    </p>
+    <p>Click one of the boxes to see the top projects for that organisation.</p>
+    <div *ngFor="let org of orgs" (click)="toggleList(org)">
+      <div class="header">
+        <img class="avatar" src="{{ avatars[org] }}" />
+        <div>
+          <h2>{{ org }}</h2>
+          <p>{{ descriptions[org] }}</p>
+        </div>
+      </div>
+      <div *ngIf="showList[org]" class="list">
+        <p *ngIf="!projects[org].length">Loading...</p>
+        <div class="project" *ngFor="let project of projects[org]">
+          <a href="{{ project.html_url }}" target="_blank" rel="noopener"
+            ><h3>{{ project.name }}</h3></a
+          >
+          <p>{{ project.description }}</p>
+          <p>{{ project.stargazers_count }} 🌟</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/" class="nes-btn">Back Home</a>
+</div>

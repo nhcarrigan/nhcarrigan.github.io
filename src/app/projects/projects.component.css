@@ -1,0 +1,22 @@
+.avatar {
+  width: 100px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  border: 2px solid var(--dark-blue);
+  margin-top: 2px;
+}
+
+.header:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    border: 1px dashed var(--dark-blue);
+}
