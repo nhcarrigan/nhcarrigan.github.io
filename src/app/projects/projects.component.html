@@ -6,7 +6,7 @@
       users (tracked by GitHub stars).
     </p>
     <p>Click one of the boxes to see the top projects for that organisation.</p>
-    <div *ngFor="let org of orgs" (click)="toggleList(org)">
+    <div class="container" *ngFor="let org of orgs" (click)="toggleList(org)">
       <div class="header">
         <img class="avatar" src="{{ avatars[org] }}" />
         <div>
