@@ -22,10 +22,7 @@ describe('ProjectsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
     expect(component.orgs).toContain('naomi-lgbt');
-    expect(component.orgs).toContain('beccalyria');
-    expect(component.orgs).toContain('rosalianightsong');
     expect(component.orgs).toContain('nhcarrigan');
-    expect(component.orgs).toContain('naomis-novas');
     expect(component.projects).toBeDefined();
     expect(component.descriptions).toBeDefined();
     expect(component.avatars).toBeDefined();
