@@ -12,10 +12,7 @@ export class ProjectsService {
   private params = '?type=public&per_page=100&page=1';
   private urls: { [key in OrganisationName]: string } = {
     'naomi-lgbt': `https://api.github.com/users/naomi-lgbt/repos${this.params}`,
-    beccalyria: `https://api.github.com/orgs/beccalyria/repos${this.params}`,
-    rosalianightsong: `https://api.github.com/orgs/rosalianightsong/repos${this.params}`,
     nhcarrigan: `https://api.github.com/orgs/nhcarrigan/repos${this.params}`,
-    'naomis-novas': `https://api.github.com/orgs/naomis-novas/repos${this.params}`,
   };
   constructor(private http: HttpClient) {}
 
