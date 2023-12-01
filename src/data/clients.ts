@@ -14,12 +14,6 @@ export const currentClients: Client[] = [
     since: 'August 2021',
   },
   {
-    name: 'TweetShift',
-    link: 'https://tweetshift.com',
-    avatar: 'tweetshift.png',
-    since: 'January 2022',
-  },
-  {
     name: 'Rythm',
     link: 'https://rythm.fm',
     avatar: 'rythm.png',
@@ -41,5 +35,12 @@ export const pastClients: PastClient[] = [
     avatar: '4c.png',
     since: 'May 2022',
     until: 'November 2022',
+  },
+  {
+    name: 'TweetShift',
+    link: 'https://tweetshift.com',
+    avatar: 'tweetshift.png',
+    since: 'January 2022',
+    until: 'May 2023',
   },
 ];
