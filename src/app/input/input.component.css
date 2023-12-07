@@ -1,0 +1,27 @@
+.input {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  font-size: 2rem;
+}
+
+span {
+  width: 5%;
+  padding-right: 1%;
+}
+
+input {
+  width: 95%;
+  font-size: 2rem;
+  background-color: var(--bg);
+  color: var(--text);
+  border: none;
+  font-family: "terminal", "Courier New", Courier, monospace;
+}
+
+.error {
+  width: 100%;
+  background-color: #170003;
+  color: #ff001e;
+  font-size: 2rem;
+}
