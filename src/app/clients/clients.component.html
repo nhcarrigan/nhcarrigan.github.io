@@ -1,0 +1,60 @@
+<h1>Contact Directory</h1>
+<p>Loading...</p>
+<h2>Long-term Clients</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>Since</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of clients">
+      <td>
+        <img
+          class="avatar"
+          src="/assets/img/clients/{{ member.avatar }}"
+          alt="{{ member.name }}"
+          width="100"
+        />
+      </td>
+      <td>
+        <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
+          member.name
+        }}</a>
+      </td>
+
+      <td>{{ member.since }}</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Short-term Clients</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Avatar</th>
+        <th>Name</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of short">
+        <td>
+          <img
+            class="avatar"
+            src="/assets/img/clients/{{ member.avatar }}"
+            alt="{{ member.name }}"
+            width="100"
+          />
+        </td>
+        <td>
+          <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
+            member.name
+          }}</a>
+        </td>
+  
+        <td>{{ member.date }}</td>
+      </tr>
+    </tbody>
+  </table>

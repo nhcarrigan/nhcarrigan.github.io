@@ -19,9 +19,18 @@ input {
   font-family: "terminal", "Courier New", Courier, monospace;
 }
 
+input:focus {
+  outline: none;
+}
+
 .error {
-  width: 100%;
   background-color: #170003;
   color: #ff001e;
+  font-size: 2rem;
+}
+
+.help {
+  background-color: #250030;
+  color: #e387ff;
   font-size: 2rem;
 }
