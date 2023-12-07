@@ -1,5 +1,5 @@
 <div class="input">
-  <div class="error">Error you suck</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
   <span>></span>
-  <input type="text" />
+  <input type="text" (keydown.enter)="onEnter($event)" />
 </div>
