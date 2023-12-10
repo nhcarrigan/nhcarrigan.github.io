@@ -1,1 +1,31 @@
-<p>contracts works!</p>
+<h1>Completed Contracts</h1>
+<p>Loading...</p>
+<table>
+  <thead>
+    <tr>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>Project</th>
+      <th>Dates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of contracts">
+      <td>
+        <img
+          class="avatar"
+          src="/assets/img/clients/{{ member.avatar }}"
+          alt="{{ member.name }}"
+          width="100"
+        />
+      </td>
+      <td>
+        <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
+          member.name
+        }}</a>
+      </td>
+      <td>{{ member.project }}</td>
+      <td>{{ member.date }}</td>
+    </tr>
+  </tbody>
+</table>
