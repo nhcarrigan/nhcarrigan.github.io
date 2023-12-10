@@ -1,6 +1,21 @@
 .content {
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: var(--text);
 }
