@@ -31,7 +31,7 @@ export class InputComponent {
     if (event.key !== 'Enter') {
       return;
     }
-    const command = (event.target as HTMLInputElement).value;
+    const command = (event.target as HTMLInputElement).value.toLowerCase();
     this.processCommand(command);
     (event.target as HTMLInputElement).value = '';
   }
