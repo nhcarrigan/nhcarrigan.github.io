@@ -37,6 +37,15 @@ export class InputComponent {
   }
 
   processCommand(command: string) {
+    if (command === 'clear') {
+      this.help = '';
+      this.error = '';
+      return;
+    }
+    if (command === 'logout' || command === 'exit') {
+      window.location.href = 'about:blank';
+      return;
+    }
     if (command.startsWith('help')) {
       const query = command.split(/\s+/)[1];
       if (!query) {
