@@ -59,7 +59,7 @@ export class InputComponent {
       }
       const target = this.commands.find((c) => c.command === query);
       if (target) {
-        this.help = target?.description;
+        this.help = `${query}: ${target?.description}`;
         return;
       }
       this.error = `Command ${query} not found.`;

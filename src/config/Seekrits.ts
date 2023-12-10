@@ -7,4 +7,8 @@ export const Seekrits = [
     slug: 'spankies',
     text: ['You have been spanked by Fruit.'],
   },
+  {
+    slug: 'grue',
+    text: ['You were eaten by a grue.'],
+  },
 ];

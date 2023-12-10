@@ -3,6 +3,8 @@
   position: fixed;
   bottom: 0;
   font-size: 2rem;
+  border: 2px solid var(--text);
+  margin-left: -1vw;
 }
 
 span {

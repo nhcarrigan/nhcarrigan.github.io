@@ -67,4 +67,10 @@ export const Commands: Command[] = [
     navigate: (router) => router.navigate(['seekrit', 'spankies']),
     hidden: true,
   },
+  {
+    command: 'grue',
+    description: 'Secret.',
+    navigate: (router) => router.navigate(['seekrit', 'grue']),
+    hidden: true,
+  },
 ];
