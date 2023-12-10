@@ -59,4 +59,10 @@ export class DonateComponent {
       description: 'Buy us a game and demand we take a break :3',
     },
   ];
+  public loading = true;
+  constructor() {
+    new Promise((resolve) => setTimeout(resolve, 5000)).then(
+      () => (this.loading = false)
+    );
+  }
 }

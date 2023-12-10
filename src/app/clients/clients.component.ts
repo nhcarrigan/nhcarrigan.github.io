@@ -32,19 +32,10 @@ export class ClientsComponent {
       since: 'April 2022',
     },
   ];
-
-  public short = [
-    {
-      name: 'BigBadBeaver TV',
-      link: 'https://bigbadbeaver.tv',
-      avatar: 'beaver.png',
-      date: 'October 2022',
-    },
-    {
-      name: 'Deepgram',
-      link: 'https://deepgram.com/',
-      avatar: 'deepgram.jpg',
-      date: 'July 2023, October 2023, December 2023',
-    },
-  ];
+  public loading = true;
+  constructor() {
+    new Promise((resolve) => setTimeout(resolve, 5000)).then(
+      () => (this.loading = false)
+    );
+  }
 }

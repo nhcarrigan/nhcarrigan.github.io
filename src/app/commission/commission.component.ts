@@ -5,8 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './commission.component.html',
-  styleUrl: './commission.component.css'
+  styleUrl: './commission.component.css',
 })
 export class CommissionComponent {
-
+  public loading = true;
+  constructor() {
+    new Promise((resolve) => setTimeout(resolve, 5000)).then(
+      () => (this.loading = false)
+    );
+  }
 }

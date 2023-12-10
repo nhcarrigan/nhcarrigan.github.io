@@ -1,31 +1,40 @@
 <h1>Pro-Bono Work</h1>
-<p>Loading...</p>
-<table>
-  <thead>
-    <tr>
-      <th>Avatar</th>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Since</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let member of clients">
-      <td>
-        <img
-          class="avatar"
-          src="/assets/img/volunteer/{{ member.avatar }}"
-          alt="{{ member.name }}"
-          width="100"
-        />
-      </td>
-      <td>
-        <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
-          member.name
-        }}</a>
-      </td>
-      <td>{{ member.title }}</td>
-      <td>{{ member.since }}</td>
-    </tr>
-  </tbody>
-</table>
+<p *ngIf="loading" class="type-forever">Loading...</p>
+<div *ngIf="!loading">
+  <p>
+    We believe in volunteering time toward causes we believe in, or people whose
+    goals and values align with our own.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Avatar</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Since</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of clients">
+        <td>
+          <img
+            class="avatar"
+            src="/assets/img/volunteer/{{ member.avatar }}"
+            alt="{{ member.name }}"
+            width="100"
+          />
+        </td>
+        <td>
+          <a
+            href="{{ member.link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ member.name }}</a
+          >
+        </td>
+        <td>{{ member.title }}</td>
+        <td>{{ member.since }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -32,4 +32,10 @@ export class ProjectsComponent {
       since: 'August 2023',
     },
   ];
+  public loading = true;
+  constructor() {
+    new Promise((resolve) => setTimeout(resolve, 5000)).then(
+      () => (this.loading = false)
+    );
+  }
 }

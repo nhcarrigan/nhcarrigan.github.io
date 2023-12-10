@@ -50,3 +50,26 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+.type-this {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: type 5s forwards;
+}
+
+.type-forever {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: type 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

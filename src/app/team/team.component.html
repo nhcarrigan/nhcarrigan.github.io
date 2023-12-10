@@ -1,31 +1,41 @@
 <h1>Staff Directory</h1>
-<p>Loading...</p>
-<table>
-  <thead>
-    <tr>
-      <th>Avatar</th>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Since</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let member of employees">
-      <td>
-        <img
-          class="avatar"
-          src="/assets/img/team/{{ member.avatar }}"
-          alt="{{ member.name }}"
-          width="100"
-        />
-      </td>
-      <td>
-        <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{
-          member.name
-        }}</a>
-      </td>
-      <td>{{ member.title }}</td>
-      <td>{{ member.since }}</td>
-    </tr>
-  </tbody>
-</table>
+<p *ngIf="loading" class="type-forever">Loading...</p>
+<div *ngIf="!loading">
+  <p>Welcome to our staff directory.</p>
+  <p>
+    We're a bit bare-bones at the moment, but we plan to go LLC in 2024 and
+    begin hiring members.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Avatar</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Since</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of employees">
+        <td>
+          <img
+            class="avatar"
+            src="/assets/img/team/{{ member.avatar }}"
+            alt="{{ member.name }}"
+            width="100"
+          />
+        </td>
+        <td>
+          <a
+            href="{{ member.link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ member.name }}</a
+          >
+        </td>
+        <td>{{ member.title }}</td>
+        <td>{{ member.since }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
