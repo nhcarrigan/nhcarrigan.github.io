@@ -1,14 +1,15 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
 
-const takeANap = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+const takeANap = (ms: number) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 @Component({
-  selector: 'app-home',
+  selector: "app-home",
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  templateUrl: "./home.component.html",
+  styleUrl: "./home.component.css"
 })
 export class HomeComponent {
   public first = false;

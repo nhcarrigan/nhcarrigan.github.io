@@ -1,15 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { RouterTestingModule } from "@angular/router/testing";
 
-import { SeekritComponent } from './seekrit.component';
+import { SeekritComponent } from "./seekrit.component";
 
-describe('SeekritComponent', () => {
+describe("SeekritComponent", () => {
   let component: SeekritComponent;
   let fixture: ComponentFixture<SeekritComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SeekritComponent, RouterTestingModule],
+      imports: [SeekritComponent, RouterTestingModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(SeekritComponent);
@@ -17,7 +17,7 @@ describe('SeekritComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

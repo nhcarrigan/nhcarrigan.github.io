@@ -18,5 +18,5 @@ a:visited {
 }
 
 .avatar {
-    filter: sepia() hue-rotate(130deg) saturate(500%);
+  filter: sepia() hue-rotate(130deg) saturate(500%);
 }
