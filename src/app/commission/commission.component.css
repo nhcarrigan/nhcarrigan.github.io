@@ -1,0 +1,14 @@
+.big {
+  font-size: 2.25rem;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 2rem;
+}
+
+a,
+a:visited {
+  color: var(--text);
+}

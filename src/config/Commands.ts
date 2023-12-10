@@ -53,6 +53,11 @@ export const Commands: Command[] = [
     description: 'Meet our team!',
     navigate: (router) => router.navigate(['team']),
   },
+  {
+    command: 'hire',
+    description: 'Request us to do work for you.',
+    navigate: (router) => router.navigate(['hire']),
+  },
   /**
    * Secrets
    */
