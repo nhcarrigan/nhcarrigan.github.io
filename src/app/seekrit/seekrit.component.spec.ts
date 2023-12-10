@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { SeekritComponent } from './seekrit.component';
 
@@ -8,10 +9,9 @@ describe('SeekritComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SeekritComponent]
-    })
-    .compileComponents();
-    
+      imports: [SeekritComponent, RouterTestingModule],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(SeekritComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
