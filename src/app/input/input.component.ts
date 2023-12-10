@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Commands } from '../../config/Commands';
 
 @Component({
   selector: 'app-input',
@@ -11,32 +12,7 @@ import { Router } from '@angular/router';
 })
 export class InputComponent {
   private router: Router;
-  private commands = [
-    {
-      command: 'help',
-      action: () => {
-        this.help =
-          'Available commands: ' +
-          this.commands
-            .filter((c) => !c.hidden)
-            .map((c) => c.command)
-            .join(', ');
-      },
-    },
-    {
-      command: 'home',
-      action: () => this.router.navigate(['']),
-    },
-    {
-      command: 'clients',
-      action: () => this.router.navigate(['clients']),
-    },
-    {
-      command: 'spankies',
-      action: () => this.router.navigate(['seekrit', 'spankies']),
-      hidden: true,
-    },
-  ];
+  private commands = Commands;
   public error: string;
   public help: string;
   constructor(private r: Router) {
@@ -61,11 +37,26 @@ export class InputComponent {
   }
 
   processCommand(command: string) {
+    if (command.startsWith('help')) {
+      const query = command.split(/\s+/)[1];
+      if (!query) {
+        this.help =
+          'Available commands: ' +
+          this.commands
+            .filter((c) => !c.hidden)
+            .map((c) => c.command)
+            .join(', ');
+        return;
+      }
+      const target = this.commands.find((c) => c.command === query);
+      this.help = target?.description ?? `Command ${query} not found.`;
+      return;
+    }
     const target = this.commands.find((c) => c.command === command);
     if (!target) {
       this.error = `Command ${command} not found. Try "help"`;
       return;
     }
-    target.action();
+    target.navigate(this.router);
   }
 }
