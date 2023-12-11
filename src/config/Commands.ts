@@ -9,7 +9,7 @@ interface Command {
 
 export const Commands: Command[] = [
   /**
-   * Routes
+   * Routes.
    */
   {
     command: "home",
@@ -59,7 +59,7 @@ export const Commands: Command[] = [
     navigate: (router) => router.navigate(["hire"])
   },
   /**
-   * Secrets
+   * Secrets.
    */
   {
     command: "spankies",
