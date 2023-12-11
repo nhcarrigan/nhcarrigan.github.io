@@ -1,6 +1,9 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 
+/**
+ *
+ */
 @Component({
   selector: "app-projects",
   standalone: true,
@@ -33,6 +36,9 @@ export class ProjectsComponent {
     }
   ];
   public loading = true;
+  /**
+   *
+   */
   constructor() {
     new Promise((resolve) => setTimeout(resolve, 5000)).then(
       () => (this.loading = false)

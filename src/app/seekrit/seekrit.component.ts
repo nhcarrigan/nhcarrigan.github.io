@@ -1,7 +1,11 @@
 import { Component } from "@angular/core";
-import { ActivatedRoute, EventType, Router } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
+
 import { Seekrits } from "../../config/Seekrits";
 
+/**
+ *
+ */
 @Component({
   selector: "app-seekrit",
   standalone: true,
@@ -13,6 +17,10 @@ export class SeekritComponent {
   public slug = "";
   public content = "";
   private seekrits = Seekrits;
+  /**
+   * @class
+   * @param {ActivatedRoute} route The current route of the application.
+   */
   constructor(private route: ActivatedRoute) {
     this.slug = this.route.snapshot.params["slug"] ?? "";
     this.content = (

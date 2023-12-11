@@ -1,8 +1,12 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
+
 import { Commands } from "../../config/Commands";
 
+/**
+ *
+ */
 @Component({
   selector: "app-input",
   standalone: true,
@@ -15,11 +19,21 @@ export class InputComponent {
   private commands = Commands;
   public error: string;
   public help: string;
+  /**
+   * @class
+   * @param {Router} r The Angular Router instance.
+   */
   constructor(private r: Router) {
     this.error = "";
     this.help = "";
     this.router = r;
   }
+  /**
+   * Captures the keydown.enter event and passes the input value
+   * to the command handler.
+   *
+   * @param {Event} event The event payload from the keydown listener.
+   */
   onEnter(event: Event) {
     event.preventDefault();
     if (!(event instanceof KeyboardEvent)) {
@@ -27,7 +41,6 @@ export class InputComponent {
     }
     this.error = "";
     this.help = "";
-    console.log(event.key);
     if (event.key !== "Enter") {
       return;
     }
@@ -36,6 +49,11 @@ export class InputComponent {
     (event.target as HTMLInputElement).value = "";
   }
 
+  /**
+   * Processes the command from the mock CLI input.
+   *
+   * @param {string} command The command passed into the input.
+   */
   processCommand(command: string) {
     if (command === "clear") {
       this.help = "";
