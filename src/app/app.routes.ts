@@ -3,7 +3,6 @@ import { Routes } from "@angular/router";
 import { ClientsComponent } from "./clients/clients.component";
 import { CommissionComponent } from "./commission/commission.component";
 import { ContractsComponent } from "./contracts/contracts.component";
-import { DonateComponent } from "./donate/donate.component";
 import { FormerComponent } from "./former/former.component";
 import { HomeComponent } from "./home/home.component";
 import { ProjectsComponent } from "./projects/projects.component";
@@ -18,7 +17,6 @@ export const routes: Routes = [
   { path: "former", component: FormerComponent },
   { path: "hire", component: CommissionComponent },
   { path: "volunteer", component: VolunteerComponent },
-  { path: "donate", component: DonateComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "team", component: TeamComponent },
   /**

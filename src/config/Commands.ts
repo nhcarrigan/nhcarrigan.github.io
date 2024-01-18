@@ -39,11 +39,6 @@ export const Commands: Command[] = [
     navigate: (router) => router.navigate(["volunteer"])
   },
   {
-    command: "donate",
-    description: "Donate to support the work we do.",
-    navigate: (router) => router.navigate(["donate"])
-  },
-  {
     command: "projects",
     description: "See our personal projects.",
     navigate: (router) => router.navigate(["projects"])
