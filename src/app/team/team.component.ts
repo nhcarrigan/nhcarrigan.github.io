@@ -65,7 +65,7 @@ export class TeamComponent {
       since: "August 2023"
     }
   ];
-  public loading = false;
+  public loading = true;
   /**
    *
    */
