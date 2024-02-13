@@ -30,7 +30,7 @@ export class TeamComponent {
       since: "November 2023"
     }
   ];
-  public loading = false;
+  public loading = true;
   /**
    *
    */
