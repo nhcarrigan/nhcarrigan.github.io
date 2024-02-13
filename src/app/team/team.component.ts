@@ -16,9 +16,18 @@ export class TeamComponent {
     {
       name: "Naomi Carrigan",
       link: "https://naomi.lgbt",
-      title: "Owner/Sole Proprietor",
+      title: "Owner",
       avatar: "naomi.png",
       since: "December 2020"
+    }
+  ];
+  public consultants = [
+    {
+      name: "Kaitlyn Nichols",
+      link: "https://fruit.naomi.lgbt/home",
+      title: "Pro-Bono Consultant",
+      avatar: "kaitlyn.jpg",
+      since: "November 2023"
     }
   ];
   public loading = true;
