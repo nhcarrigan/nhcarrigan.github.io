@@ -23,7 +23,14 @@ export class TeamComponent {
   ];
   public consultants = [
     {
-      name: "Kaitlyn Nichols",
+      name: "a2937",
+      link: "https://github.com/a2937",
+      title: "Pro-Bono Consultant",
+      avatar: "a2937.png",
+      since: "April 2023"
+    },
+    {
+      name: "Kaitlyn",
       link: "https://fruit.naomi.lgbt/home",
       title: "Pro-Bono Consultant",
       avatar: "kaitlyn.jpg",
