@@ -5,7 +5,7 @@
   margin: auto;
   height: 90vh;
   overflow-y: auto;
-  scrollbar-width: thin; 
+  scrollbar-width: thin;
   scrollbar-color: var(--text) var(--bg);
 }
 
