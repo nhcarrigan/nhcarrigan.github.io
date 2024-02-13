@@ -38,4 +38,39 @@
       </tr>
     </tbody>
   </table>
+  <hr />
+  <p>We also bring on the occasional pro-bono consultant.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Avatar</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Since</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of consultants">
+        <td>
+          <img
+            class="avatar"
+            src="/assets/img/team/{{ member.avatar }}"
+            alt="{{ member.name }}"
+            width="100"
+          />
+        </td>
+        <td>
+          <a
+            href="{{ member.link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ member.name }}</a
+          >
+        </td>
+        <td>{{ member.title }}</td>
+        <td>{{ member.since }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

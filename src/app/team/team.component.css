@@ -20,3 +20,7 @@ a:visited {
 .avatar {
   filter: sepia() hue-rotate(130deg) saturate(500%);
 }
+
+hr {
+  border: 2px solid var(--text);
+}
