@@ -16,25 +16,53 @@ export class TeamComponent {
     {
       name: "Naomi Carrigan",
       link: "https://naomi.lgbt",
-      title: "Owner",
+      title: "CEO",
       avatar: "naomi.png",
       since: "December 2020"
     }
   ];
   public consultants = [
     {
+      name: "Denna",
+      link: "https://denna.naomi.lgbt",
+      title: "Financial Consultant",
+      avatar: "denna.png",
+      since: "December 2022"
+    },
+    {
+      name: "Tim",
+      link: "https://github.com/timiro",
+      title: "Engineering Consultant",
+      avatar: "tim.png",
+      since: "December 2022"
+    },
+    {
       name: "a2937",
       link: "https://github.com/a2937",
-      title: "Pro-Bono Consultant",
+      title: "Engineering Consultant / Community Moderator",
       avatar: "a2937.png",
       since: "April 2023"
     },
     {
       name: "Kaitlyn",
       link: "https://fruit.naomi.lgbt/home",
-      title: "Pro-Bono Consultant",
+      title: "Engineering Consultant / Community Moderator",
       avatar: "kaitlyn.jpg",
       since: "November 2023"
+    }
+  ];
+  public moderators = [
+    {
+      name: "Alastair",
+      title: "Community Moderator",
+      avatar: "alastair.png",
+      since: "August 2023"
+    },
+    {
+      name: "Ilenia",
+      title: "Community Moderator",
+      avatar: "ilenia.png",
+      since: "August 2023"
     }
   ];
   public loading = true;

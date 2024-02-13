@@ -1,11 +1,12 @@
 .content {
   position: fixed;
   top: 0;
-  width: 95%;
+  width: 98vw;
   margin: auto;
   height: 90vh;
   overflow-y: auto;
   scrollbar-width: thin;
+  scrollbar-color: var(--text) var(--bg);
 }
 
 .content::-webkit-scrollbar {
