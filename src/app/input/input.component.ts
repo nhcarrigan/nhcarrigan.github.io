@@ -55,6 +55,9 @@ export class InputComponent {
    * @param {string} command The command passed into the input.
    */
   processCommand(command: string) {
+    if(command===""){
+      focus();
+    }
     if (command === "clear") {
       this.help = "";
       this.error = "";

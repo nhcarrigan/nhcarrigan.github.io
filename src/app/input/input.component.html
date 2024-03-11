@@ -1,6 +1,6 @@
 <div class="input">
   <span>$&gt;</span>
-  <input type="text" (keydown.enter)="onEnter($event)" />
+  <input type="text" placeholder="Enter your command" (keydown.enter)="onEnter($event)"/>
   <div *ngIf="error" class="error">{{ error }}</div>
   <div *ngIf="help" class="help">{{ help }}</div>
 </div>
